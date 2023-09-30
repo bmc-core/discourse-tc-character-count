@@ -1,0 +1,4 @@
+character_count_hide_count_when_sufficient:
+  default: false
+  description:
+    en: "Hide the count once you've reached the required minimum"

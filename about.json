@@ -1,5 +1,6 @@
 {
-    "name": "Character Count",
-    "about_url": "",
-    "component": true
+  "name": "Character Count",
+  "about_url": "",
+  "authors": "merefield@gmail.com",
+  "component": true
 }

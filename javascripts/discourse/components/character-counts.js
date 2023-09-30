@@ -12,6 +12,6 @@ export default class CharacterCountComponent extends Component {
   get charCount() {
    return this.showRequired ?
      `${this.args.composer.replyLength} / ${this.args.composer.minimumPostLength}` :
-     `${this.args.composer.replyLength}`
+     (settings.character_count_hide_count_when_sufficient ? "" : `${this.args.composer.replyLength}`)
   }
 };
