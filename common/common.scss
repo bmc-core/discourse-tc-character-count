@@ -1,10 +1,20 @@
 .character-counts {
-    display: inline-block;
-    position: absolute;
-    right: 0.4em;
-    bottom: 0.25em;
+  display: inline-block;
+  position: absolute;
+  right: 0.4em;
+  bottom: 0.25em;
+  color: $primary-low-mid;
+  &.more-required {
+    color: $danger;
+  }
+}
+
+.title-input {
+  .character-counts {
+    margin-bottom: 0.5em;
     color: $primary-low-mid;
     &.more-required {
       color: $danger;
     }
   }
+}
