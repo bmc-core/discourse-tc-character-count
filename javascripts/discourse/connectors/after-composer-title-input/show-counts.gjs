@@ -1,6 +1,6 @@
 import Component from "@glimmer/component";
-import CharacterCounts from "../../components/character-counts";
 import { service } from "@ember/service";
+import CharacterCounts from "../../components/character-counts";
 
 export default class CharacterCountComponent extends Component {
   @service siteSettings;
@@ -14,10 +14,10 @@ export default class CharacterCountComponent extends Component {
   }
 
   <template>
-    <CharacterCounts 
+    <CharacterCounts
       @missingReplyCharacters={{this.missingTitleCharacters}}
       @length={{@outletArgs.composer.titleLength}}
       @minimumLength={{this.titleRequiredLength}}
     />
   </template>
-};
+}
