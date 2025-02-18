@@ -6,7 +6,9 @@ export default class CharacterCountComponent extends Component {
   @service siteSettings;
 
   get titleRequiredLength() {
-    return this.siteSettings.min_topic_title_length;
+    return this.args.outletArgs.composer.archetypeId === "private_message"
+      ? this.siteSettings.min_personal_message_title_length
+      : this.siteSettings.min_topic_title_length;
   }
 
   get missingTitleCharacters() {
@@ -14,6 +16,7 @@ export default class CharacterCountComponent extends Component {
   }
 
   <template>
+    {{log this.args.outletArgs.composer}}
     <CharacterCounts
       @missingReplyCharacters={{this.missingTitleCharacters}}
       @length={{@outletArgs.composer.titleLength}}
