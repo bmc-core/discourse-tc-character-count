@@ -16,7 +16,6 @@ export default class CharacterCountComponent extends Component {
   }
 
   <template>
-    {{log this.args.outletArgs.composer}}
     <CharacterCounts
       @missingReplyCharacters={{this.missingTitleCharacters}}
       @length={{@outletArgs.composer.titleLength}}
