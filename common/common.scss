@@ -4,6 +4,7 @@
   right: 0.4em;
   bottom: 0.25em;
   color: $primary-low-mid;
+
   &.more-required {
     color: $danger;
   }
@@ -13,6 +14,7 @@
   .character-counts {
     margin-bottom: 0.5em;
     color: $primary-low-mid;
+
     &.more-required {
       color: $danger;
     }
