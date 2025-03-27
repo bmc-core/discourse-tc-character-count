@@ -20,6 +20,9 @@ importers:
       prettier:
         specifier: 3.5.3
         version: 3.5.3
+      prettier-plugin-ember-template-tag:
+        specifier: ^2.0.4
+        version: 2.0.4(prettier@3.5.3)
       stylelint:
         specifier: 16.16.0
         version: 16.16.0(typescript@5.8.2)
