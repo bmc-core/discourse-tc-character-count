@@ -9,8 +9,8 @@ export default class CharacterCountComponent extends Component {
     return this.showRequired
       ? `${this.args.length} / ${this.args.minimumLength}`
       : settings.character_count_hide_count_when_sufficient
-      ? ""
-      : `${this.args.length}`;
+        ? ""
+        : `${this.args.length}`;
   }
 
   <template>
